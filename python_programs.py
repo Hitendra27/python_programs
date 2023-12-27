@@ -1,11 +1,15 @@
-# Python Program to Calculate the Area of a Triangle
+# Python Program to Solve Quadratic Equation
 
-a = 5
-b = 6
-c = 7
+import cmath
 
-s = (a + b + c) / 2
+a = 1
+b = 5
+c = 6
 
-area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+d = (b**2) - (4*a*c)
 
-print('The area of the triangle is %0.2f' %area)
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))
+
