@@ -1,6 +1,11 @@
-# Python Program to Find the Square Root
+# Python Program to Calculate the Area of a Triangle
 
-num = 8
+a = 5
+b = 6
+c = 7
 
-num_sqrt = num ** 0.5
-print('The square root of %0.3f is %0.3f'%(num , num_sqrt))
+s = (a + b + c) / 2
+
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+
+print('The area of the triangle is %0.2f' %area)
