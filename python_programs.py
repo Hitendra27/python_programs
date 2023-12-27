@@ -1,14 +1,8 @@
-# Python Program to Swap Two Variables
+# Python Program to Generate a Random Number
 
-x = 5
-y = 10
+import random
 
-temp = x
-x = y
-y = temp
-
-print('The value of x after swapping: {}'.format(x))
-print('The value of y after swapping: {}'.format(y))
+print(random.randint(0,9))
 
 
 
