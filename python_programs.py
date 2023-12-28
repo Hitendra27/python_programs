@@ -1,8 +1,11 @@
-# Python Program to Generate a Random Number
+# Python Program to Convert Kilometers to Miles
 
-import random
+Kilometers = 3.5
 
-print(random.randint(0,9))
+conv_fac = 0.621371
+
+miles = Kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(Kilometers,miles))
 
 
 
