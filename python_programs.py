@@ -1,9 +1,6 @@
-# Python Program to Convert Celsius To Fahrenheit
+# Python Program to convert Fahrenheit to Celsius
 
-celsius = 37.5
+fahrenheit = 120
 
-fahrenheit = (celsius * 1.8) + 32
-print('%0.1f degree Celsius is qual to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
-
-
-
+celsuis = (fahrenheit - 32) / 1.8
+print('%0.1f degree Fahrenheit is equal to %0.1f degree Celsius' %(fahrenheit,celsuis))
