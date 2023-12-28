@@ -1,6 +1,11 @@
-# Python Program to convert Fahrenheit to Celsius
+# Python Program to Check if a Number is Positive, Negative or 0
 
-fahrenheit = 120
+num = -4
 
-celsuis = (fahrenheit - 32) / 1.8
-print('%0.1f degree Fahrenheit is equal to %0.1f degree Celsius' %(fahrenheit,celsuis))
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
