@@ -1,9 +1,12 @@
-# Python Program to Check if a Number is Odd or Even
+# Python Program to Check Leap Year
 
-num = 1111
+year = 2024
 
-if(num % 2) == 0:
-    print("{0} is Even".format(num))
-else: 
-    print("{0} is Odd".format(num))
+if(year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+elif (year % 4 == 0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year))
+
 
