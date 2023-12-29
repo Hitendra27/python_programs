@@ -1,11 +1,9 @@
-# Python Program to Check if a Number is Positive, Negative or 0
+# Python Program to Check if a Number is Odd or Even
 
-num = 12
+num = 1111
 
-if num >= 0:
-    if num == 0:
-        print("Zero")
-    else:
-        print("Positive number")
+if(num % 2) == 0:
+    print("{0} is Even".format(num))
 else: 
-   print("Negative number")
+    print("{0} is Odd".format(num))
+
