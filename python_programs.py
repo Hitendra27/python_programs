@@ -1,15 +1,19 @@
-# Python Program to Find the Largest Among Three Numbers
+# Python Program to Check Prime Number
 
-num1 = 34
-num2 = 89
-num3 = 9
+num = 29
 
-if (num1 >= num2) and (num1 >= num3):
-    largest = num1
-elif (num2 >= num1) and (num2 >= num3):
-    largest = num2
-else: 
-    largest = num3
+flag = False
 
-print("The largest number is", largest)
+if num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = True
+            break
+
+        if flag: 
+            print(num, "is not a prime number")
+        else:
+            print(num, "is a prime number")
 
