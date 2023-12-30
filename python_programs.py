@@ -1,12 +1,15 @@
-# Python Program to Check Leap Year
+# Python Program to Find the Largest Among Three Numbers
 
-year = 2024
+num1 = 34
+num2 = 89
+num3 = 9
 
-if(year % 400 == 0) and (year % 100 == 0):
-    print("{0} is a leap year".format(year))
-elif (year % 4 == 0) and (year % 100 != 0):
-    print("{0} is a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else: 
+    largest = num3
 
+print("The largest number is", largest)
 
