@@ -1,14 +1,15 @@
-# Python Program to Print all Prime Numbers in an Interval
+# Python Program to Find the Factorial of a Number
 
-lower = 900
-upper = 1000
+num = 9
 
-print("Prime numbers between", lower, "and", upper, "are:")
+factorial = 1
 
-for num in range(lower, upper + 1):
-    if num > 1:
-        for i in range(2, num):
-            if (num % i) == 0:
-                break
-        else:
-            print(num)
+if num < 0:
+    print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+    print("The factorial of 0 is 1")
+else: 
+    for i in range(1,num + 1):
+        factorial = factorial * i
+    print("The factorial of",num,"is",factorial)
+
