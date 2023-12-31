@@ -1,15 +1,13 @@
 # Python Program to Find the Factorial of a Number
 
-num = 9
+def factorial(x):
 
-factorial = 1
+    if x == 1:
+        return 1
+    else: 
+        return (x * factorial(x-1))
+    
+num = 8
 
-if num < 0:
-    print("Sorry, factorial does not exist for negative numbers")
-elif num == 0:
-    print("The factorial of 0 is 1")
-else: 
-    for i in range(1,num + 1):
-        factorial = factorial * i
-    print("The factorial of",num,"is",factorial)
-
+result = factorial(num)
+print("The factorial of", num, "is", result)
