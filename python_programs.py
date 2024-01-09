@@ -1,13 +1,6 @@
-# Python Program to Find the Factorial of a Number
+# Python Program to Display the multiplication Table
 
-def factorial(x):
+num = 12
 
-    if x == 1:
-        return 1
-    else: 
-        return (x * factorial(x-1))
-    
-num = 8
-
-result = factorial(num)
-print("The factorial of", num, "is", result)
+for i in range(1, 11):
+    print(num, 'x', i, '=', num * i)
