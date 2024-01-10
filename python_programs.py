@@ -1,18 +1,5 @@
-# Python Program to Print the Fibonacci sequence
+# Python Program to Check Armstrong Number
 
-nterms = 7
+num = 15
 
-n1, n2 = 0, 1
-count = 0
-
-if nterms == 1:
-    print("Fibonacci sequence upto",nterms,".")
-    print(n1)
-else:
-    print("Fibonacci sequence:")
-    while count < nterms:
-        print(n1)
-        nth = n1 + n2
-        n1 = n2
-        n2 = nth
-        count += 1
+sum = 0
