@@ -5,4 +5,6 @@ num = 15
 sum = 0
 
 if num > sum:
-    return 
+    return sum
+else:
+    return num
