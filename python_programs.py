@@ -1,23 +1,21 @@
-# Python Program to Check Armstrong Number
+# Python Program to Find Armstrong Number in an Interval
 
-num = 153
+lower = 100
+upper = 2000
 
-sum = 0
+for num in range(lower, upper + 1):
 
-<<<<<<< HEAD
-temp = num
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** 3
-    temp //= 10
+    order = len(str(num))
 
-if num == sum:
-    print(num,"is an Armstrong number")
-else:
-    print(num,"is not an Armstrong number")
-=======
-if num > sum:
-    return sum
-else:
-    return num
->>>>>>> 4b695d0a51805c8c6cae3203fd54301db76a4d06
+    sum = 0
+
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+
+    if num == sum:
+        print(num)
+
+
