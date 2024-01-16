@@ -1,21 +1,14 @@
-# Python Program to Find Armstrong Number in an Interval
+# Python Program to Find the Sum of Natural Numbers
 
-lower = 100
-upper = 2000
+num = 16
 
-for num in range(lower, upper + 1):
-
-    order = len(str(num))
-
+if num < 0:
+    print("Enter a positive number")
+else:
     sum = 0
-
-    temp = num
-    while temp > 0:
-        digit = temp % 10
-        sum += digit ** order
-        temp //= 10
-
-    if num == sum:
-        print(num)
+    while(num > 0):
+        sum += num
+        num -= 1
+    print("The sum is", sum)
 
 
