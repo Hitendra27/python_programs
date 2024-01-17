@@ -10,5 +10,7 @@ else:
         sum += num
         num -= 1
     print("The sum is", sum)
+    
+print("The sum is", sum)
 
 
