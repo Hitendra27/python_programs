@@ -12,6 +12,6 @@ else:
     print("The sum is", sum)
     
 print("The sum is", sum)
-print()
+print("The sum is", sum)
 
 
